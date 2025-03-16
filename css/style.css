@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playwrite+CA:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
+font-family: "Playwrite DE Grund", cursive;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+
+font-family: "Comic Neue", cursive;
+font-weight: 300;
+font-style: normal;
+
+font-family: "Comic Neue", cursive;
+font-weight: 400;
+font-style: normal;
+
+font-family: "Comic Neue", cursive;
+font-weight: 700;
+font-style: normal;
+
+font-family: "Comic Neue", cursive;
+font-weight: 300;
+font-style: italic;
+
+font-family: "Comic Neue", cursive;
+font-weight: 400;
+font-style: italic;
+
+font-family: "Comic Neue", cursive;
+font-weight: 700;
+font-style: italic;
+
+*/
+
+:root {
+    --backgroundcolor: #FFEFC8;
+    --primarycolor:#FF748B;
+    --secondarycolor: #FFD95F;
+    --contrastcolor: #D70654;
+    --detailcolor: #B8D576 ;
+    --textcolor: #F72C5B;
+
+    --primaryfont:
+    --secondaryfont: 
+    --terciaryfont:
+}
+
+.html {
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--contrastcolor);
+   
+}
+
+.body {
+    background-color:var(--backgroundcolor);
+}
+
+.header {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.header_nav {
+    text-decoration: none;
+}
+
+.section {
+    font-family: "Comic Neue", cursive;
+    font-size: 18px;
+    font-weight: 300px;
+    font-style: normal;
+}
+
+.h1-title {
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 300px;
+    font-style: normal;
+}
