@@ -30,7 +30,7 @@ font-style: normal;
 }
 
 .body {
-    background-color:var(--backgroundcolor);
+    background-color: var(--backgroundcolor);
 }
 
 .header {
