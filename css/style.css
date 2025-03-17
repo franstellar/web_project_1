@@ -1,55 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playwrite+CA:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Oldenburg&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 /*
-font-family: "Playwrite DE Grund", cursive;
+font-family: "Delius", cursive;
+font-weight: 400;
+font-style: normal;
+
+font-family: "Oldenburg", serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "Playwrite GB S", cursive;
 font-optical-sizing: auto;
 font-weight: <weight>;
 font-style: normal;
-
-font-family: "Comic Neue", cursive;
-font-weight: 300;
-font-style: normal;
-
-font-family: "Comic Neue", cursive;
-font-weight: 400;
-font-style: normal;
-
-font-family: "Comic Neue", cursive;
-font-weight: 700;
-font-style: normal;
-
-font-family: "Comic Neue", cursive;
-font-weight: 300;
-font-style: italic;
-
-font-family: "Comic Neue", cursive;
-font-weight: 400;
-font-style: italic;
-
-font-family: "Comic Neue", cursive;
-font-weight: 700;
-font-style: italic;
 
 */
 
 :root {
     --backgroundcolor: #FFEFC8;
-    --primarycolor:#FF748B;
-    --secondarycolor: #FFD95F;
-    --contrastcolor: #D70654;
-    --detailcolor: #B8D576 ;
-    --textcolor: #F72C5B;
+    --textcolor: #D70654;
+    --primarycolor: #FFD95F;
+    --secondarycolor: #B8D576 ;
+    --terciarycolor: #F72C5B;
+    --contrastcolor:#FF748B;
+    --activelinkcolor: #E4F1AC;
 
     --primaryfont:
     --secondaryfont: 
     --terciaryfont:
-}
-
-.html {
-    border-width: 2px;
-    border-style: solid;
-    border-color: var(--contrastcolor);
-   
 }
 
 .body {
@@ -57,28 +34,141 @@ font-style: italic;
 }
 
 .header {
-    border: 2px solid black;
-    padding: 5px;
-    margin: 5px;
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: normal;
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+}
+
+.header_nav > a {
+    color: var(--textcolor);
+    background-color: var(--primarycolor);
+    border-radius: 10px;
     text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+a:hover {
+    background-color: var(--contrastcolor);
+}
+
+a:active {
+    background-color: var(--activelinkcolor);
 }
 
 .header_nav {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: "Oldenburg", serif;
+    color: var(--textcolor);
+    font-weight: 250px;
+    font-style: normal;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main {
+    margin: 3em 15em 3em 15em;
+    background-color: var(--secondarycolor);
+    border: 5px solid;
+    border-radius: 10px;
+    border-color: var(--secondarycolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .section {
-    font-family: "Comic Neue", cursive;
-    font-size: 18px;
-    font-weight: 300px;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: "Delius", cursive;
+    font-weight: 200px;
     font-style: normal;
 }
 
-.h1-title {
-    font-family: "Playwrite DE Grund", cursive;
+.section-h1 {
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: var(--activelinkcolor);
+    border-radius: 10px;
+    font-family: "Playwrite GB S", cursive;
+    color: var(--textcolor);
+    font-size: 2.5em;
+    font-optical-sizing: auto;
     font-weight: 300px;
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.section-h2 {
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: var(--activelinkcolor);
+    border-radius: 10px;
+    font-family: "Oldenburg", serif;
+    color: var(--textcolor);
+    font-optical-sizing: auto;
+    font-weight: 150px;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-p {
+    margin: 1.5em;
+    padding: 1.5em;
+    font-size: 1.15em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-me {
+    padding: 2em;
+    margin: 2em;
+    background-color: var(--contrastcolor);
+    border: 2px solid;
+    border-color: var(--terciarycolor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.img.dino {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+footer {
+    font-family: "Oldenburg", serif;
+    font-weight: 300px;
+    font-style: normal;
+    color: var(--textcolor);
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-link > a {
+    text-decoration: none;
+}
+
+.footer-link > a:hover {
+    padding: 0.2em;
+    background-color: var(--contrastcolor);
+    border-radius: 10px;
+}
+
