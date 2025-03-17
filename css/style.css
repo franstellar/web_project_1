@@ -19,14 +19,14 @@ font-style: normal;
     --backgroundcolor: #FFEFC8;
     --textcolor: #D70654;
     --primarycolor: #FFD95F;
-    --secondarycolor: #B8D576 ;
+    --secondarycolor: #B8D576;
     --terciarycolor: #F72C5B;
-    --contrastcolor:#FF748B;
+    --contrastcolor: #FF748B;
     --activelinkcolor: #E4F1AC;
 
-    --primaryfont:
-    --secondaryfont: 
-    --terciaryfont:
+    --primaryfont: "Playwrite GB S", cursive;
+    --secondaryfont: "Delius", cursive;
+    --terciaryfont: "Oldenburg", serif;
 }
 
 .body {
@@ -36,9 +36,11 @@ font-style: normal;
 .header {
     background-color: var(--secondarycolor);
     border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
 }
 
-.header_nav > a {
+.header_nav>a {
     color: var(--textcolor);
     background-color: var(--primarycolor);
     border-radius: 10px;
@@ -55,11 +57,12 @@ a:active {
 }
 
 .header_nav {
-    padding: 0.5em;
+    padding: 0.3em;
     margin: 0.5em;
-    font-family: "Oldenburg", serif;
+    font-family: var(--terciaryfont);
     color: var(--textcolor);
     font-weight: 250px;
+    font-size: 1.2em;
     font-style: normal;
     text-decoration: none;
     display: flex;
@@ -67,12 +70,9 @@ a:active {
     justify-content: space-evenly;
 }
 
-main {
-    margin: 3em 15em 3em 15em;
+.main {
+    margin: 4rem 12rem 4rem 12rem;
     background-color: var(--secondarycolor);
-    border: 5px solid;
-    border-radius: 10px;
-    border-color: var(--secondarycolor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,9 +82,6 @@ main {
 .section {
     padding: 0.5em;
     margin: 0.5em;
-    font-family: "Delius", cursive;
-    font-weight: 200px;
-    font-style: normal;
 }
 
 .section-text {
@@ -94,10 +91,10 @@ main {
 
 .section-h1 {
     padding: 0.3em;
-    margin: 0.3em;
+    margin: 0;
     background-color: var(--activelinkcolor);
-    border-radius: 10px;
-    font-family: "Playwrite GB S", cursive;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--terciaryfont);
     color: var(--textcolor);
     font-size: 2.5em;
     font-optical-sizing: auto;
@@ -110,10 +107,10 @@ main {
 
 .section-h2 {
     padding: 0.5em;
-    margin: 0.5em;
+    margin: 0;
     background-color: var(--activelinkcolor);
-    border-radius: 10px;
-    font-family: "Oldenburg", serif;
+    border-radius: 0px 0px 10px 10px;
+    font-family: var(--terciaryfont);
     color: var(--textcolor);
     font-optical-sizing: auto;
     font-weight: 150px;
@@ -125,8 +122,11 @@ main {
 
 .section-p {
     margin: 0.8em;
-    padding: 0.8em;
+    padding: 0.5em;
+    font-family: var(--terciaryfont);
     font-size: 1.15em;
+    background-color: var(--activelinkcolor);
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -136,13 +136,10 @@ main {
     padding: 1.3em;
     margin: 1.3em;
     background-color: var(--contrastcolor);
-    border: 2px solid;
-    border-color: var(--terciarycolor);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
 }
 
 .img.dino {
@@ -151,19 +148,19 @@ main {
     left: 50px;
 }
 
-footer {
-    font-family: "Oldenburg", serif;
+.footer {
+    font-family: var(--terciaryfont);
     font-weight: 300px;
     font-style: normal;
     color: var(--textcolor);
+    margin: 0.5rem;
+    padding: 0.8rem;
     background-color: var(--secondarycolor);
     border-radius: 10px;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: space-between;
-    align-items: center;
     gap: 20px;
 }
 
@@ -172,24 +169,22 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
-    align-items: center;
 }
 
 .footer-section-img {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-content: flex-start;
-    align-items: center;
 }
 
-.footer-section-link > a {
+.footer-section-link>a {
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
-.footer-section-link > a:hover {
+.footer-section-link>a:hover {
     padding: 0.2em;
     background-color: var(--contrastcolor);
     border-radius: 10px;
 }
-
