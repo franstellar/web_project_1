@@ -17,6 +17,7 @@ font-style: normal;
 
 :root {
     --backgroundcolor: #FFEFC8;
+    --backgroundcolor2: #fceaba;
     --textcolor: #D70654;
     --primarycolor: #FFD95F;
     --secondarycolor: #B8D576;
@@ -29,15 +30,29 @@ font-style: normal;
     --terciaryfont: "Oldenburg", serif;
 }
 
-.body {
-    background-color: var(--backgroundcolor);
+body {
+    background: repeating-linear-gradient(90deg, var(--backgroundcolor), var(--backgroundcolor) 15px, var(--backgroundcolor2) 15px, var(--backgroundcolor2) 30px);
 }
 
-.header {
+header {
     background-color: var(--secondarycolor);
     border-radius: 10px;
     margin: 0.5rem;
     padding: 0.5rem;
+}
+
+.header_nav {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: var(--terciaryfont);
+    color: var(--textcolor);
+    font-size: 1.2rem;
+    font-style: normal;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
 .header_nav>a {
@@ -45,7 +60,7 @@ font-style: normal;
     background-color: var(--primarycolor);
     border-radius: 10px;
     text-decoration: none;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     align-content: center;
 }
 
@@ -61,22 +76,7 @@ a:active {
     background-color: var(--activelinkcolor);
 }
 
-.header_nav {
-    padding: 0.3rem;
-    margin: 0.5rem;
-    font-family: var(--terciaryfont);
-    color: var(--textcolor);
-    font-weight: 250px;
-    font-size: 1rem;
-    font-style: normal;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-}
-
-.main {
+main {
     margin: 4rem 12rem 4rem 12rem;
     background-color: var(--secondarycolor);
     border-radius: 10px;
@@ -86,24 +86,19 @@ a:active {
     align-items: center;
 }
 
-.section {
-    padding: 0.5em;
-    margin: 0.5em;
-}
-
-.section-text {
-    padding: 0.5em;
-    margin: 0.5em;
-}
-
-.section-h1 {
-    padding: 0.3em;
+section {
+    padding: 0;
     margin: 0;
+}
+
+.section_h1 {
     background-color: var(--activelinkcolor);
-    border-radius: 10px 10px 0px 0px;
-    font-family: var(--terciaryfont);
     color: var(--textcolor);
+    font-family: var(--terciaryfont);
     font-size: 2.5em;
+    margin: 1.3rem 0 0 0;
+    padding: 0.5rem;
+    border-radius: 10px 10px 0px 0px;
     font-optical-sizing: auto;
     font-weight: 300px;
     font-style: normal;
@@ -112,9 +107,9 @@ a:active {
     justify-content: center;
 }
 
-.section-h2 {
-    padding: 0.5em;
+.section_h2 {
     margin: 0;
+    padding: 0.5em;
     background-color: var(--activelinkcolor);
     border-radius: 0px 0px 10px 10px;
     font-family: var(--terciaryfont);
@@ -127,7 +122,7 @@ a:active {
     justify-content: center;
 }
 
-.section-p {
+.section_p {
     margin: 0.8em;
     padding: 0.5em;
     font-family: var(--terciaryfont);
@@ -139,32 +134,27 @@ a:active {
     justify-content: center;
 }
 
-.img-me {
+.section_img {
     padding: 1.3em;
     margin: 1.3em;
     background-color: var(--contrastcolor);
+    border: 5px solid;
+    border-color: var(--primarycolor);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.img.dino {
-    position: absolute;
-    top: 200px;
-    left: 50px;
-}
-
-.footer {
+footer {
     font-family: var(--terciaryfont);
     font-weight: 300px;
     font-style: normal;
     color: var(--textcolor);
     margin: 0.5rem;
-    padding: 0.8rem;
+    padding: 0.5rem;
     background-color: var(--secondarycolor);
     border-radius: 10px;
-    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -178,11 +168,10 @@ a:active {
     align-content: flex-start;
 }
 
-.footer-section-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
+.footer-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
 }
 
 .footer-section-link>a {
@@ -196,23 +185,37 @@ a:active {
     border-radius: 10px;
 }
 
-.section-h1-musictaste {
-    padding: 0.5rem;
-    margin: 0.5rem;
-    background-color: var(--activelinkcolor);
+#main {
+    background-color: var(--backgroundcolor);
+    margin: 4rem 12rem 9.8rem 12rem;
+    background-color: var(--secondarycolor);
     border-radius: 10px;
-    font-family: var(--terciaryfont);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section {
+    padding: 1.3rem;
+}
+
+#section_h1 {
+    background-color: var(--activelinkcolor);
     color: var(--textcolor);
-    font-size: 1rem;
-    font-optical-sizing: auto;
+    font-family: var(--terciaryfont);
     font-style: normal;
+    font-size: 1.8rem;
+    margin: 0 1.3rem 1.3rem 1.3rem;
+    padding: 1rem;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .section-img-link-spotify {
-    margin: 1rem;
+    margin: 0 0 1.3rem 0;
     padding: 1rem;
     background-color: var(--activelinkcolor);
     border-radius: 10px;
@@ -227,7 +230,7 @@ a:active {
     padding: 0.2rem 2.2rem 0.2rem 2.2rem;
     background-color: var(--primarycolor);
     border-radius: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--terciaryfont);
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -241,15 +244,4 @@ a:active {
 
 .section-link-spotify:active {
     background-color: var(--activelinkcolor);
-}
-
-.main-musictaste {
-    background-color: var(--backgroundcolor);
-    margin: 4rem 12rem 29.85rem 12rem;
-    background-color: var(--secondarycolor);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
