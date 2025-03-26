@@ -184,23 +184,23 @@ footer {
     border-radius: 10px;
 }
 
-.main_2 {
+.main_about-me {
     display: flex;
     flex-direction: column;
 }
 
-.section_2 {
+.section_1_about-me {
     display: flex;
     flex-direction: row;
 }
 
-.article_2 {
+.article_1_about-me {
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
 }
 
-.section_2_h1 {
+.section_1_h1_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     background-color: var(--activelinkcolor);
@@ -213,7 +213,7 @@ footer {
     flex-direction: row;
 }
 
-.section_2_p {
+.section_1_p_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     font-family: var(--terciaryfont);
@@ -222,14 +222,13 @@ footer {
     border-radius: 10px;
 }
 
-.aside_2 {
+.aside_1_about-me {
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
-
 }
 
-.aside_2_h2 {
+.aside_1_h2_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     background-color: var(--backgroundcolor2);
@@ -243,25 +242,25 @@ footer {
     flex-direction: row-reverse;
 }
 
-.img_aside_2 {
+.img_aside_1_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     border: 5px solid var(--primarycolor);
     border-radius: 10px;
 }
 
-.section_3 {
+.section_2_about-me {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.article_3 {
+.article_2_about-me {
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
 }
 
-.section_3_h1 {
+.section_2_h1_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     background-color: var(--activelinkcolor);
@@ -275,7 +274,7 @@ footer {
     flex-direction: row-reverse;
 }
 
-.section_3_p {
+.section_2_p_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     background-color: var(--activelinkcolor);
@@ -287,13 +286,13 @@ footer {
     text-align: end;
 }
 
-.aside_3 {
+.aside_2_about-me {
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
 }
 
-.aside_3_h2 {
+.aside_2_h2_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     background-color: var(--backgroundcolor2);
@@ -307,7 +306,7 @@ footer {
     flex-direction: row;
 }
 
-.img_aside_3 {
+.img_aside_2_about-me {
     margin: 0.8rem;
     padding: 0.8rem;
     border: 5px solid var(--primarycolor);
@@ -316,7 +315,7 @@ footer {
     flex-direction: column;
 }
 
-#main {
+.main_music-taste {
     background-color: var(--backgroundcolor);
     margin: 4rem 12rem 9.8rem 12rem;
     background-color: var(--secondarycolor);
@@ -327,11 +326,11 @@ footer {
     align-items: center;
 }
 
-#section {
+.section_music-taste {
     padding: 1.3rem;
 }
 
-#section_h1 {
+.section_h1_music-taste {
     background-color: var(--activelinkcolor);
     color: var(--textcolor);
     font-family: var(--terciaryfont);
@@ -346,7 +345,14 @@ footer {
     justify-content: center;
 }
 
-.section-img-link-spotify {
+.section_spotify_music-taste {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_logo_music-taste {
     margin: 0 0 1.3rem 0;
     padding: 1rem;
     background-color: var(--secondarycolor);
@@ -357,27 +363,28 @@ footer {
     gap: 20px;
 }
 
-.section-link-spotify {
-    padding: 0.2rem 2.2rem 0.2rem 2.2rem;
+.section_link_music-taste {
+    margin-bottom: 1rem;
+    padding: 1.2rem;
     background-color: var(--primarycolor);
     border-radius: 10px;
     font-family: var(--terciaryfont);
     font-size: 1.5rem;
     font-weight: bold;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.section-link-spotify>a {
+.section_link_music-taste>a {
     color: black;
     text-decoration: none;
 }
 
-.section-link-spotify:hover {
+.section_link_music-taste:hover {
     background-color: var(--contrastcolor);
 }
 
-.section-link-spotify:active {
+.section_link_music-taste:active {
     background-color: var(--activelinkcolor);
 }
