@@ -282,8 +282,14 @@ footer {
     font-size: 1.15rem;
     border-radius: 10px;
     display: flex;
-    flex-direction: row-reverse;
-    text-align: end;
+    flex-direction: column;
+    text-align: right;
+    gap: 0.5rem;
+}
+
+.section_2_p_about-me li {
+    list-style: none;
+    line-height: 1.5;
 }
 
 .aside_2_about-me {
