@@ -520,38 +520,36 @@ footer {
     transform: scale(1.1);
 }
 
-/* Garante que o iframe ocupe tudo quando ele carregar */
 .video-cover iframe {
     width: 100%;
     height: 100%;
 }
 
-/* --- FAV DRINKS PAGE STYLES --- */
-
 .main_favdrinks {
-    margin: 4rem 12rem 4rem 12rem;
+    margin: 4rem 12rem;
     background-color: var(--secondarycolor);
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+    gap: 30px;
 }
 
-/* Intro Section */
 .section_1_favdrinks {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100%; 
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .section_1_h1_favdrinks {
     background-color: var(--activelinkcolor);
     color: var(--textcolor);
     font-family: var(--terciaryfont);
-    font-size: 2.5em;
+    font-size: 2rem;
     margin: 1.3rem;
     padding: 0.8rem;
     border-radius: 10px;
@@ -570,48 +568,61 @@ footer {
     max-width: 80%;
 }
 
-/* Drinks List Sections */
+/* Ajuste na imagem para manter o layout vertical que você pediu antes */
 .section_2_favdrinks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 1rem 0;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.2); /* Sutil destaque para separar as bebidas */
-    border-radius: 10px;
+    width: 45%;         /* Mantém dois por linha */
+    margin: 1rem;
+    padding: 2.5rem;    /* AUMENTADO: Dá distância das bordas verdes para o card amarelo */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-sizing: border-box;
 }
 
-/* Truque para alternar: Pares ficam normais, Ímpares invertem a ordem */
 .section_2_favdrinks:nth-child(odd) {
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
+/* O Article agora assume o papel do "Card Amarelo" */
 .article_2_favdrinks {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1; /* Ocupa o espaço disponível */
-    padding: 0 2rem;
+    align-items: center;
+    background-color: var(--primarycolor);
+    padding: 1.2rem;    /* Espaço interno para o texto não colar no amarelo */
+    border-radius: 12px;
+    box-shadow: 4px 4px 0px var(--textcolor); /* Sombra um pouco mais forte */
+    margin-bottom: 2rem; /* Espaço entre o card amarelo e a imagem abaixo */
+    width: 90%;         /* Ajustado para não tocar nas bordas laterais do container verde */
 }
 
+/* O H2 perde o fundo e a sombra para não "duplicar" o card */
 .section_2_h2_favdrinks {
-    background-color: var(--primarycolor); /* Destaque amarelo */
     color: var(--textcolor);
     font-family: var(--terciaryfont);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    padding: 1rem;
-    border-radius: 10px;
     text-align: center;
-    box-shadow: 3px 3px 0px var(--textcolor); /* Um charminho extra */
+    margin: 0;
+}
+
+/* Estilização para o texto extra dentro do card */
+.section_2_p_favdrinks {
+    font-family: var(--terciaryfont);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.4rem;
+    color: var(--textcolor);
+    font-style: italic; /* Um charme para o detalhe da bebida */
 }
 
 .aside_2_favdrinks {
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
 .img_aside_2_favdrinks {
@@ -619,11 +630,11 @@ footer {
     background-color: var(--contrastcolor);
     border: 5px solid var(--primarycolor);
     border-radius: 10px;
-    display: flex;
 }
 
 .img_aside_2_favdrinks img {
     border-radius: 5px;
-    max-width: 100%;
+    width: 100%;      /* A imagem ocupa a largura disponível do container */
+    max-width: 300px; /* Limite para não ficar gigante em telas muito grandes */
     height: auto;
 }
