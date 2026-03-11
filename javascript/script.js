@@ -7,3 +7,22 @@ function carregarVideo(div) {
         allowfullscreen></iframe>
     `;
 }
+
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const track = document.querySelector('.carousel_track');
+    const slides = document.querySelectorAll('.carousel_slide');
+    const totalSlides = slides.length;
+
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    } else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+
+    const amountToMove = -currentSlide * 100;
+    track.style.transform = `translateX(${amountToMove}%)`;
+}
