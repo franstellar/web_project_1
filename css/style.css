@@ -149,10 +149,10 @@ main,
     gap: 30px;
 }
 
-/* MAIN (HOME PAGE) */
+/* HOME PAGE */
 section {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 article p, 
@@ -181,12 +181,12 @@ article li:last-child {
 }
 
 .section_h1 {
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     background-color: var(--activelinkcolor);
     color: var(--textcolor);
     font-family: var(--terciaryfont);
-    font-size: 2.3em;
-    margin: 1.3rem 0 0 0;
-    padding: 0.5rem;
+    font-size: 2rem;
     border-radius: 10px 10px 0px 0px;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -199,8 +199,8 @@ article li:last-child {
 }
 
 .section_h2 {
-    margin: 0;
-    padding: 0.5em;
+    margin: 0 0 1.5rem 0;
+    padding: 0.5rem;
     background-color: var(--activelinkcolor);
     border-radius: 0px 0px 10px 10px;
     font-family: var(--terciaryfont);
@@ -216,7 +216,7 @@ article li:last-child {
 }
 
 .section_p {
-    margin: 0.8rem 0 0.8rem 0;
+    margin: 1.5rem 0;
     padding: 0.5rem;
     font-family: var(--terciaryfont);
     font-size: 1.15rem;
@@ -230,8 +230,8 @@ article li:last-child {
 }
 
 .section_img {
-    padding: 1.3rem;
-    margin: 1.3rem 0 1.3rem 0;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
     background-color: var(--contrastcolor);
     border: 5px solid var(--primarycolor);
     outline: 5px solid var(--contrastcolor);
@@ -239,7 +239,6 @@ article li:last-child {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-shadow: 8px 8px 0px var(--textcolor);
 }
 
 .social-links {
@@ -248,8 +247,8 @@ article li:last-child {
     justify-content: center;
     align-items: center;
     gap: 20px; 
-    margin-top: 3rem;
-    margin-bottom: 2rem; 
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
     flex-wrap: wrap; 
     width: 100%;
 }
@@ -318,7 +317,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     box-shadow: 8px 8px 0px var(--textcolor);
     border: 3px solid var(--textcolor);
 }
@@ -350,19 +349,22 @@ footer {
 /* ABOUT ME PAGE */
 
 .section_1_about-me {
+    margin: 0;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: row;
 }
 
 .article_1_about-me {
-    padding: 1.3rem;
+    margin: 0;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .section_1_h1_about-me {
-    margin: 0.8rem;
-    padding: 0.8rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     background-color: var(--backgroundcolor2);
     font-family: var(--terciaryfont);
     color: var(--textcolor);
@@ -376,8 +378,8 @@ footer {
 }
 
 .section_1_p_about-me {
-    margin: 0.8rem;
-    padding: 0.8rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     font-family: var(--terciaryfont);
     font-size: 1.15rem;
     background-color: var(--activelinkcolor);
@@ -387,14 +389,15 @@ footer {
 }
 
 .aside_1_about-me {
-    padding: 1.3rem;
+    margin: 0;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .aside_1_h2_about-me {
-    margin: 0.8rem;
-    padding: 0.8rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     background-color: var(--backgroundcolor2);
     font-family: var(--terciaryfont);
     color: var(--textcolor);
@@ -409,7 +412,8 @@ footer {
 }
 
 .img_aside_1_about-me {
-    padding: 0.8rem;
+    margin: 1.5rem 0 0.5rem 0.3rem;
+    padding: 0.5rem;
     background-color: var(--contrastcolor);
     border: 5px solid var(--primarycolor);
     outline: 5px solid var(--contrastcolor);
@@ -418,24 +422,25 @@ footer {
     justify-content: center;
     align-items: center;
     width: fit-content;
-    margin: 0.8rem;
-    box-shadow: 8px 8px 0px var(--textcolor);
 }
 
 .section_2_about-me {
+    margin: 0;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: row-reverse;
 }
 
 .article_2_about-me {
-    padding: 1.3rem;
+    margin: 0; 
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .section_2_h1_about-me {
-    margin: 0.8rem;
-    padding: 0.8rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     background-color: var(--backgroundcolor2);
     font-family: var(--terciaryfont);
     color: var(--textcolor);
@@ -450,8 +455,8 @@ footer {
 }
 
 .section_2_p_about-me {
-    margin: 0.8rem;
-    padding: 0.8rem;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 0.5rem;
     background-color: var(--activelinkcolor);
     font-family: var(--terciaryfont);
     font-size: 1.15rem;
@@ -470,14 +475,15 @@ footer {
 }
 
 .aside_2_about-me {
-    padding: 1.3rem;
+    margin: 0;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .aside_2_h2_about-me {
-    margin: 0.8rem;
-    padding: 0.8rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     background-color: var(--backgroundcolor2);
     font-family: var(--terciaryfont);
     color: var(--textcolor);
@@ -492,7 +498,8 @@ footer {
 }
 
 .img_aside_2_about-me {
-    padding: 0.8rem;
+    margin: 1.5rem 0 0 0.5rem;
+    padding: 0.5rem;
     background-color: var(--contrastcolor);
     border: 5px solid var(--primarycolor);
     outline: 5px solid var(--contrastcolor);
@@ -501,32 +508,34 @@ footer {
     justify-content: center;
     align-items: center;
     width: fit-content;
-    margin: 0.8rem;
-    box-shadow: 8px 8px 0px var(--textcolor);
 }
 
 /* MUSIC TASTE PAGE */
 
 .section_music-taste {
-    padding: 1.3rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section_h1_music-taste {
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     background-color: var(--activelinkcolor);
     color: var(--textcolor);
     font-family: var(--terciaryfont);
     font-style: normal;
     font-size: 1.8rem;
     font-weight: bold;
-    margin: 1rem auto;
-    padding: 1rem;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: 3px solid var(--textcolor);
     box-shadow: 6px 6px 0px var(--textcolor);
-    width: 566px;
+    width: calc(580px + 1.6rem);
     box-sizing: border-box;
 }
 
@@ -535,8 +544,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px 0;
-    margin-bottom: 40px;
+    margin: 1.5rem 0 0 0;
+    padding: 0;
 }
 
 .btn-sticker {
@@ -557,20 +566,30 @@ footer {
     cursor: pointer;
 }
 
+.section_video_frame_music-taste {
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 0.8rem;
+    background-color: var(--contrastcolor);
+    border: 5px solid var(--primarycolor);
+    outline: 5px solid var(--contrastcolor);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
 .video-cover {
     position: relative;
     width: 560px;
     height: 315px;
     background-color: #000;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
-    border: 3px solid var(--textcolor);
-    box-shadow: 10px 10px 0px var(--textcolor);
 }
 
 .video-cover img {
@@ -623,6 +642,8 @@ footer {
     flex-direction: column;
     width: 100%; 
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .section_1_h1_favdrinks {
@@ -630,8 +651,8 @@ footer {
     color: var(--textcolor);
     font-family: var(--terciaryfont);
     font-size: 2rem;
-    margin: 1.3rem auto 0.65rem auto;
-    padding: 0.8rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem;
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
@@ -642,8 +663,8 @@ footer {
 }
 
 .section_1_p_favdrinks {
-    margin: 0.65rem auto 1.3rem auto;
-    padding: 1rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem 1.5rem;
     font-family: var(--terciaryfont);
     font-size: 1.2rem;
     background-color: var(--activelinkcolor);
@@ -660,17 +681,13 @@ footer {
     flex-direction: column; 
     align-items: center;
     width: 45%;
-    margin: 1rem;
-    padding: 2.5rem;
+    margin: 0;
+    padding: 2rem;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     box-sizing: border-box;
     border: 3px solid var(--textcolor);
     box-shadow: 8px 8px 0px var(--textcolor);
-}
-
-.section_2_favdrinks:nth-child(odd) {
-    flex-direction: column;
 }
 
 .article_2_favdrinks {
@@ -679,12 +696,13 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--primarycolor);
-    padding: 1.2rem;
+    padding: 0.5rem;
     border-radius: 12px;
     box-shadow: 6px 6px 0px var(--textcolor);
     border: 3px solid var(--textcolor);
-    margin-bottom: 2rem;
-    width: 90%;
+    margin: 0 0 1.5rem 0; 
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .section_2_h2_favdrinks {
@@ -700,7 +718,7 @@ footer {
     font-family: var(--terciaryfont);
     font-size: 1.1rem;
     text-align: center;
-    margin-top: 0.4rem;
+    margin: 0.4rem 0 0 0;
     color: var(--textcolor);
     font-style: italic;
 }
@@ -709,15 +727,19 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 0;
 }
 
 .img_aside_2_favdrinks {
+    margin: 0;
     padding: 0.5rem;
     background-color: var(--contrastcolor);
     border: 5px solid var(--primarycolor);
     outline: 5px solid var(--contrastcolor);
     border-radius: 10px;
-    box-shadow: 8px 8px 0px var(--textcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img_aside_2_favdrinks img {
@@ -735,6 +757,7 @@ footer {
     width: 100%; 
     align-items: center;
     text-align: center;
+    margin: 0; padding: 0;
 }
 
 .section_1_h1_cats {
@@ -742,8 +765,8 @@ footer {
     color: var(--textcolor);
     font-family: var(--terciaryfont);
     font-size: 2rem;
-    margin: 1rem auto 0.65rem auto;
-    padding: 0.8rem 2rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem 1.5rem;
     border-radius: 10px;
     font-weight: bold;
     box-shadow: 6px 6px 0px var(--textcolor);
@@ -754,8 +777,8 @@ footer {
 }
 
 .section_1_p_cats {
-    margin: 0.65rem auto 2rem auto;
-    padding: 1rem;
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem 1.5rem;
     font-family: var(--terciaryfont);
     font-size: 1.2rem;
     background-color: var(--activelinkcolor);
@@ -774,6 +797,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1.5rem 0;
 }
 
 .carousel_track_container {
@@ -781,8 +805,7 @@ footer {
     width: 100%;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px 0;
-    /* CIRURGIA 2: Adicionada a borda e a sombra no card verde */
+    padding: 2rem 0;
     border: 3px solid var(--textcolor);
     box-shadow: 8px 8px 0px var(--textcolor);
     box-sizing: border-box;
@@ -810,26 +833,26 @@ footer {
 }
 
 .cat_card img {
-    width: 100%;
-    max-width: 350px;
+    width: 80%;
     height: 350px;
     object-fit: cover;
     border-radius: 15px;
     border: 5px solid var(--primarycolor);
     outline: 5px solid var(--contrastcolor);
     background-color: var(--contrastcolor);
-    box-shadow: 8px 8px 0px var(--textcolor);
+    box-sizing: border-box;
 }
 
 .cat_info {
     background-color: var(--primarycolor);
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: 6px 6px 0px var(--textcolor);
-    margin-top: 2rem;
+    margin: 1.5rem 0 0 0;
     width: 80%;
     text-align: center;
     border: 3px solid var(--textcolor);
+    box-sizing: border-box;
 }
 
 .cat_info h3 {
@@ -843,7 +866,7 @@ footer {
     font-family: var(--secondaryfont);
     color: var(--textcolor);
     font-size: 1.1rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 0 0;
 }
 
 .carousel_btn {
@@ -892,14 +915,11 @@ footer {
   display: inline-block;
 }
 
-/* 2. PUXAMOS PARA DENTRO (Valores positivos ao invés de negativos) */
 .prev { left: 25px; } 
 .next { right: 25px; }
 
-/* MEDIA QUERY ATUALIZADO */
 @media (max-width: 1024px) {
     .main_cats { margin: 2rem 2rem; }
-    /* No celular/tablet, colamos um pouquinho mais na borda pra não invadir a foto */
     .prev { left: 10px; }
     .next { right: 10px; }
 }
