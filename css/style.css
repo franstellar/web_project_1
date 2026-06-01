@@ -127,7 +127,12 @@ main,
     box-shadow: 12px 12px 0px var(--textcolor);
 }
 
-main,
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .main_music-taste,
 .main_cats {
     display: flex;
@@ -141,12 +146,11 @@ main,
     flex-direction: column;
 }
 
-.main_favdrinks {
+.main_nebulae {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-bottom: 3rem;
 }
 
 /* HOME PAGE */
@@ -181,7 +185,7 @@ article li:last-child {
 }
 
 .section_h1 {
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 1.5rem 0 1.5rem;
     padding: 0.5rem;
     background-color: var(--activelinkcolor);
     color: var(--textcolor);
@@ -199,7 +203,7 @@ article li:last-child {
 }
 
 .section_h2 {
-    margin: 0 0 1.5rem 0;
+    margin: 0 1.5rem 1.5rem 1.5rem;
     padding: 0.5rem;
     background-color: var(--activelinkcolor);
     border-radius: 0px 0px 10px 10px;
@@ -216,7 +220,7 @@ article li:last-child {
 }
 
 .section_p {
-    margin: 1.5rem 0;
+    margin: 1.5rem 1.5rem;
     padding: 0.5rem;
     font-family: var(--terciaryfont);
     font-size: 1.15rem;
@@ -230,7 +234,7 @@ article li:last-child {
 }
 
 .section_img {
-    margin: 1.5rem 0;
+    margin: 1.5rem 1.5rem;
     padding: 1.5rem;
     background-color: var(--contrastcolor);
     border: 5px solid var(--primarycolor);
@@ -286,15 +290,15 @@ article li:last-child {
 
 /* Coordinates and sizes */
 .deco-whitecat  { width: 50px;  top: 7.45rem;  left: 13rem; }
-.deco-popsicle  { width: 60px;  top: 30rem;   left: 26rem; transform: rotate(320deg);}
-.deco-strawberry{ width: 75px;  top: 26rem;   left: 35rem; }
-.deco-wow       { width: 80px;  top: 45rem;   left: 28rem; }
-.deco-dino      { width: 100px; top: 49rem;   left: 30rem; }
-.deco-coffeegif { width: 80px;  top: 65.5rem;   left: 2.5rem; }
-.deco-planet    { width: 100px; top: 26rem;   left: 64.0625rem; }
-.deco-icecream  { width: 80px;  top: 38rem;   left: 61rem; transform: rotate(20deg); }
-.deco-coffee    { width: 65px;  top: 50rem;   left: 65rem; }
-.deco-catgif    { width: 100px; top: 64.7rem;   left: 87.4rem; }
+.deco-popsicle  { width: 65px;  top: 35.5rem;   left: 34.75rem; transform: rotate(320deg);}
+.deco-strawberry{ width: 75px;  top: 26.5rem;   left: 35rem; }
+.deco-wow       { width: 80px;  top: 47rem;   left: 32rem; }
+.deco-dino      { width: 100px; top: 50.5rem;   left: 35rem; }
+.deco-coffeegif { width: 80px;  top: 66rem;   left: 2.5rem; }
+.deco-planet    { width: 100px; top: 27rem;   left: 53rem; }
+.deco-icecream  { width: 90px;  top: 42rem;   left: 54rem; transform: rotate(20deg); }
+.deco-coffee    { width: 65px;  top: 51rem;   left: 55rem; }
+.deco-catgif    { width: 100px; top: 65.3rem;   left: 87.4rem; }
 
 @media (max-width: 768px) {
     .scrapbook-item {
@@ -310,7 +314,7 @@ footer {
     font-family: var(--terciaryfont);
     font-weight: bold;
     color: var(--textcolor);
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
     padding: 0.5rem;
     background-color: var(--secondarycolor);
     border-radius: 10px;
@@ -635,104 +639,92 @@ footer {
     height: 100%;
 }
 
-/* FAV DRINKS PAGE */
-
-.section_1_favdrinks {
+/* NEBULAE PAGE */
+.section_1_nebulae,
+.article_2_nebulae,
+.wrapper_img_nebulae {
     display: flex;
     flex-direction: column;
-    width: 100%; 
     align-items: center;
-    margin: 0;
+    width: 90%;
+    max-width: 800px; 
+    margin: 0 auto;
     padding: 0;
 }
 
-.section_1_h1_favdrinks {
-    background-color: var(--backgroundcolor2);
-    color: var(--textcolor);
-    font-family: var(--terciaryfont);
-    font-size: 2rem;
+.section_1_h1_nebulae,
+.section_1_p_nebulae,
+.section_2_h2_nebulae,
+.section_2_p_nebulae,
+.img_section_2_nebulae {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.section_1_p_nebulae {
+    text-align: center;
+}
+
+.section_1_h1_nebulae,
+.section_2_h2_nebulae {
     margin: 1.5rem 0 0 0;
     padding: 0.5rem;
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
-    border: 3px solid var(--textcolor);
-    box-shadow: 6px 6px 0px var(--textcolor);
-    width: 80%;
-    box-sizing: border-box;
-}
-
-.section_1_p_favdrinks {
-    margin: 1.5rem 0 0 0;
-    padding: 0.5rem 1.5rem;
+    background-color: var(--backgroundcolor2);
     font-family: var(--terciaryfont);
-    font-size: 1.2rem;
-    background-color: var(--activelinkcolor);
+    color: var(--textcolor);
+    font-size: 2rem;
+    font-weight: bold;
     border-radius: 10px;
-    text-align: center;
-    width: 80%;
     border: 3px solid var(--textcolor);
     box-shadow: 6px 6px 0px var(--textcolor);
+    width: 100%;
     box-sizing: border-box;
-}
-
-.section_2_favdrinks {
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    width: 45%;
-    margin: 0;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    box-sizing: border-box;
-    border: 3px solid var(--textcolor);
-    box-shadow: 8px 8px 0px var(--textcolor);
+    align-items: center; 
+    justify-content: center; 
 }
 
-.article_2_favdrinks {
+.section_1_p_nebulae,
+.section_2_p_nebulae {
+    margin: 1.5rem 0 0 0;
+    padding: 0.5rem; 
+    background-color: var(--activelinkcolor);
+    font-family: var(--terciaryfont);
+    color: var(--textcolor);
+    font-size: 1.15rem;
+    border-radius: 10px;
+    border: 3px solid var(--textcolor);
+    box-shadow: 6px 6px 0px var(--textcolor);
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primarycolor);
-    padding: 0.5rem;
-    border-radius: 12px;
-    box-shadow: 6px 6px 0px var(--textcolor);
-    border: 3px solid var(--textcolor);
-    margin: 0 0 1.5rem 0; 
-    width: 100%;
-    box-sizing: border-box;
 }
 
-.section_2_h2_favdrinks {
-    color: var(--textcolor);
-    font-family: var(--terciaryfont);
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-}
-
-.section_2_p_favdrinks {
-    font-family: var(--terciaryfont);
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 0.4rem 0 0 0;
-    color: var(--textcolor);
-    font-style: italic;
-}
-
-.aside_2_favdrinks {
+.section_2_nebulae {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin: 0;
+    gap: 2rem;
 }
 
-.img_aside_2_favdrinks {
+.section_2_nebulae:nth-child(even) .section_2_h2_nebulae {
+    justify-content: flex-start;
+}
+.section_2_nebulae:nth-child(odd) .section_2_h2_nebulae {
+    justify-content: flex-end;
+}
+.section_2_nebulae:nth-child(even) .section_2_p_nebulae {
+    text-align: left;
+}
+.section_2_nebulae:nth-child(odd) .section_2_p_nebulae {
+    text-align: right;
+}
+
+.img_section_2_nebulae {
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.8rem;
     background-color: var(--contrastcolor);
     border: 5px solid var(--primarycolor);
     outline: 5px solid var(--contrastcolor);
@@ -742,15 +734,15 @@ footer {
     align-items: center;
 }
 
-.img_aside_2_favdrinks img {
+.img_section_2_nebulae img {
     border-radius: 5px;
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+    background-color: var(--primarycolor);
 }
 
 /* MY CATS PAGE */
-
 .section_1_cats {
     display: flex;
     flex-direction: column;
